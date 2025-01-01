@@ -1,0 +1,379 @@
+/* styles.css */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFFFFF;
+    --background-color: #F0F4F8;
+    --text-color: #333333;
+    --highlight-color: #FF9800;
+    --border-color: #E0E0E0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+            background: linear-gradient(45deg, var(--primary-color), var(--highlight-color));
+            color: var(--secondary-color);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    gap: 10px;
+}
+
+.navbar .icon {
+    font-size: 24px; /* Adjust this size */
+    color: white;
+  }
+
+.nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-refresh {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.button-refresh:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    background-color: var(--secondary-color);
+}
+
+.table th, .table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background-color: var(--background-color);
+    transition: background-color 0.2s;
+}
+
+.info-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.comments-section {
+    margin-top: 30px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comments-section button {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comments-section button:hover {
+    background-color: var(--highlight-color);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share-buttons button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-buttons button:hover {
+    background-color: var(--highlight-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.4em;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Feed Section */
+.feed-section {
+    margin-bottom: 20px;
+}
+
+.feed-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+.stocks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Stock Card */
+.stock-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stock-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stock-card h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+    color: #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stock-card .identifier {
+    font-size: 14px;
+    color: #666;
+    background-color: #eef;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.stock-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.stock-card p em {
+    font-style: italic;
+    color: #888;
+}
+
+.stock-card .broadcasted {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.stock-card .broadcasted i {
+    margin-right: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    color: #666;
+}
+
+/* Filter Container Styling */
+#filterContainer {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Styling */
+#filterContainer select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#filterContainer select:hover {
+    border-color: #888;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.3);
+}
+
+#filterContainer select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder Styling */
+#filterContainer select option:first-child {
+    color: #888;
+}
+
+/* Add space for better layout on smaller screens */
+@media screen and (max-width: 768px) {
+    #filterContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+
