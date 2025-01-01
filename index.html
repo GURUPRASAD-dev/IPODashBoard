@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>📈 IPO Dashboard</title>
+        <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/svgs/solid/chart-line.svg" type="image/svg+xml"> 
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    </head>
+<body data-section="all">  
+    <header>
+        <h1><i class="fas fa-arrow-trend-up"></i> IPO DASHBOARD</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="mainboard.html"><i class="fas fa-chart-line"></i> MainBoard</a>
+        <a href="sme.html"><i class="fas fa-building"></i> SME</a>
+        <a href="allotment.html"><i class="fas fa-list-alt"></i> IPO Allotment</a>
+        <a href="stocks_feed.html"><i class="fas fa-newspaper"></i> Stock News Feed</a>
+    </nav>
+
+    <div class="container">
+        <!-- Description Section -->
+        <section class="info-section">
+            <h3><i class="fas fa-info-circle"></i> About IPO Dashboard</h3>
+            <p>Welcome to <b>IPO Dashboard</b> – your one-stop solution for tracking Initial Public Offerings (IPOs). Our platform offers detailed insights and real-time data, helping you stay ahead in the financial market.</p>
+            <ul>
+                <li><i class="fas fa-chart-bar"></i> <b>IPO Names</b> and their Grey Market Premiums (GMPs)</li>
+                <li><i class="fas fa-coins"></i> <b>Listing prices</b>, percentage gains, and offering dates</li>
+                <li><i class="fas fa-users"></i> <b>Subscription data</b> and investor categories</li>
+            </ul>
+            <p>Make well-informed decisions with our data-rich interface, tailored for modern investors!</p>
+            
+            <h3><i class="fas fa-newspaper"></i> Stock News Feed</h3>
+            <p>Stay updated with the latest developments in the stock market:</p>
+            <ul>
+                <li><i class="fas fa-arrow-up"></i> <b>Rising stocks:</b> Gain insights into stocks with significant price increases.</li>
+                <li><i class="fas fa-arrow-down"></i> <b>Falling stocks:</b> Identify stocks experiencing drops and trends.</li>
+                <li><i class="fas fa-lightbulb"></i> <b>Market insights:</b> Key events and trends shaping the financial landscape.</li>
+            </ul>
+            <p>Analyze, plan, and execute your investments with confidence using real-time market updates.</p>
+        </section>
+
+        <!-- IPO Table Section -->
+        <div class="table-container">
+            <!-- <h3><i class="fas fa-table"></i> IPO Listings</h3> -->
+            <table class="table" id="ipoTable">
+                <thead>
+                    <tr>
+                        <th>IPO Name</th>
+                        <th>IPO GMP</th>
+                        <th>Price</th>                     
+                        <th>Gain %</th>
+                        <th>Dates</th>
+                        <th>Subject</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be injected dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Investor Information Section -->
+        <div class="info-section">
+            <h3><i class="fas fa-lightbulb"></i> Note for Investors</h3>
+            <p><i class="fas fa-exclamation-triangle"></i> Investing in IPOs involves risks. Please research thoroughly before investing.</p>
+
+            <h3><i class="fas fa-chart-line"></i> What is IPO GMP?</h3>
+            <p>IPO Grey Market Premium (GMP) indicates the unofficial market price of an IPO before its listing.</p>
+
+            <h3><i class="fas fa-question-circle"></i> Important Points to Consider about IPO GMP:</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> GMP is not an official metric; consider other financial data as well.</li>
+                <li><i class="fas fa-chart-area"></i> Reflects demand and potential listing gains of an IPO.</li>
+                <li><i class="fas fa-signal"></i> Influenced by market sentiment, company fundamentals, and subscription rates.</li>
+            </ul>
+
+            <h3><i class="fas fa-money-bill-wave"></i> What is Kostak Rate?</h3>
+            <p>The Kostak rate is the price someone pays for an IPO application before its allotment.</p>
+        </div>
+
+        <!-- Comments and Share Section -->
+        <div class="comments-section">
+            <textarea placeholder="Leave your comments here..."></textarea>
+            <button><i class="fas fa-comment-dots"></i> Submit</button>
+        </div>
+
+        <div class="share-buttons">
+            <button><i class="fab fa-facebook"></i> Share on Facebook</button>
+            <button><i class="fab fa-twitter"></i> Share on Twitter</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><i class="fas fa-exclamation-circle"></i> Disclaimer: This is for informational purposes only. Consult a financial advisor before investing.</p>
+        <p>&copy; 2024 IPO Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

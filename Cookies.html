@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Cookie to API</title>
+</head>
+<body>
+
+    <h1>Send Cookie to API</h1>
+
+    <!-- Input box for user to paste the cookie -->
+    <label for="cookieInput">Enter Cookie:</label>
+    <input type="text" id="cookieInput" placeholder="Paste cookie here">
+    
+    <!-- Button to trigger the send request -->
+    <button onclick="sendCookie()">Send Cookie</button>
+
+    <script>
+        function sendCookie() {
+            // Get the cookie string from the input box
+            var cookieString = document.getElementById('cookieInput').value;
+
+            // Validate if cookie string is not empty
+            if (cookieString.trim() === '') {
+                alert('Please enter a cookie.');
+                return;
+            }
+
+            // Send the cookie as a parameter in the request body
+            fetch('http://192.168.1.8:8091/api/Trading/Add-Cookie', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    cookie: cookieString  // Sending cookie as part of the body
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Cookie sent successfully!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Error sending cookie.');
+            });
+        }
+    </script>
+
+</body>
+</html>
