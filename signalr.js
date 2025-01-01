@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize SignalR connection
     const connection = new signalR.HubConnectionBuilder()
-        .withUrl("http://192.168.1.8:8091/stocksHub")
+        .withUrl("https://tradingadvisor20250101235804.azurewebsites.net/stocksHub")
         .withAutomaticReconnect([0, 2000, 10000, 30000])
         .configureLogging(signalR.LogLevel.Information)
         .build();
