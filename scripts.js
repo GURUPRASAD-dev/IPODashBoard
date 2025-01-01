@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
 async function fetchIPOs(section) {
     // Define the API URLs for different sections
     const apiUrls = {
-        all: 'http://192.168.1.8:8091/api/Trading/get-all-board',
-        mainboard: 'http://192.168.1.8:8091/api/Trading/get-main-board',
-        sme: 'http://192.168.1.8:8091/api/Trading/get-sme-board',
-        current: 'http://192.168.1.8:8091/api/Trading/get-main-board',
-        closed: 'http://192.168.1.8:8091/api/Trading/get-main-board',
-        listed: 'http://192.168.1.8:8091/api/Trading/get-main-board',
-        allotment: 'http://192.168.1.8:8091/api/Trading/get-allotment-board',
+        all: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-all-board',
+        mainboard: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-main-board',
+        sme: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-sme-board',
+        current: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-main-board',
+        closed: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-main-board',
+        listed: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-main-board',
+        allotment: 'https://tradingadvisor20250101235804.azurewebsites.net/api/Trading/get-allotment-board',
     };
 
     // Log the section being used
