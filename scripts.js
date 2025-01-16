@@ -71,7 +71,7 @@ function updateTable(section, data) {
     // Iterate over the data and create table rows
     data.forEach((ipo) => {
         // Create a unique identifier for each row to prevent duplicates
-        const uniqueId = `${ipo.Company || ipo.name || ipo.CompanyName}-${ipo.Dates || ipo.listingDate}`;
+        const uniqueId = `${ipo.Name || ipo.name || ipo.CompanyName}-${ipo.Bidding_start_date || ipo.Bidding_end_date || ipo.Listing_date}`;
 
         // Check if the row already exists in the Set
         if (addedRows.has(uniqueId)) {
