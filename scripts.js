@@ -89,14 +89,14 @@ function updateTable(section, data) {
                 rowContent = `
                     <td>${ipo['Name']}</td>
                     <td>${ipo['Status']}</td>                    
-                    <td>${ipo['GMP'] !== null ? ipo['GMP'] : 'N/A'}</td>
-                    <td>${ipo['Min_price'] !== null ? ipo['Min_price'] : 'N/A'}</td>
-                    <td>${ipo['Max_price'] !== null ? ipo['Max_price'] : 'N/A'}</td>
-                    <td>${ipo['Bidding_start_date'] !== null ? ipo['Bidding_start_date'] : 'N/A'}</td>
-                    <td>${ipo['Bidding_end_date'] !== null ? ipo['Bidding_end_date'] : 'N/A'}</td>
-                    <td>${ipo['Listing_date'] !== null ? ipo['Listing_date'] : 'N/A'}</td>
-                    <td>${ipo['Lot_size'] !== null ? ipo['Lot_size'] : 'N/A'}</td>
-                     <td>${ipo['Additional_text'] !== null ? ipo['Additional_text'] : 'N/A'}</td>
+                    <td>${ipo['GMP'] !== null ? ipo['GMP'] : '-'}</td>
+                    <td>${ipo['Min_price'] !== null ? ipo['Min_price'] : '-'}</td>
+                    <td>${ipo['Max_price'] !== null ? ipo['Max_price'] : '-'}</td>
+                    <td>${ipo['Bidding_start_date'] !== null ? ipo['Bidding_start_date'] : '-'}</td>
+                    <td>${ipo['Bidding_end_date'] !== null ? ipo['Bidding_end_date'] : '-'}</td>
+                    <td>${ipo['Listing_date'] !== null ? ipo['Listing_date'] : '-'}</td>
+                    <td>${ipo['Lot_size'] !== null ? ipo['Lot_size'] : '-'}</td>
+                     <td>${ipo['Additional_text'] !== null ? ipo['Additional_text'] : '-'}</td>
                      <td>${ipo['Is_SME'] == true ? 'SME' : 'MainBoard'}</td>
                 `;
                 break;
