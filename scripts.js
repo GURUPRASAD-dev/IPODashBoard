@@ -87,13 +87,17 @@ function updateTable(section, data) {
             case 'mainboard':
             case 'sme':
                 rowContent = `
-                    <td>${ipo['Company']}</td>
-                    <td>${ipo['Issue Price']}</td>
-                    <td>${ipo['Listing Price']}</td>
-                    <td>${ipo['Gain or Loss'] !== null ? ipo['Gain or Loss'] : 'N/A'}</td>
-                    <td>${ipo['Dates']}</td>
-                    <td>${ipo['Minimum Investment']}</td>
-                    <td>${ipo['Category']}</td>
+                    <td>${ipo['Name']}</td>
+                    <td>${ipo['Status']}</td>
+                    <td>${ipo['Is_SME'] == true ? 'SME' : 'MainBoard'}</td>
+                    <td>${ipo['Additional_text'] !== null ? ipo['Additional_text'] : 'N/A'}</td>
+                    <td>${ipo['Min_price'] !== null ? ipo['Min_price'] : 'N/A'}</td>
+                    <td>${ipo['Max_price'] !== null ? ipo['Max_price'] : 'N/A'}</td>
+                    <td>${ipo['Bidding_start_date'] !== null ? ipo['Bidding_start_date'] : 'N/A'}</td>
+                    <td>${ipo['Bidding_end_date'] !== null ? ipo['Bidding_end_date'] : 'N/A'}</td>
+                    <td>${ipo['Listing_date'] !== null ? ipo['Listing_date'] : 'N/A'}</td>
+                    <td>${ipo['Lot_size'] !== null ? ipo['Lot_size'] : 'N/A'}</td>
+                    <td>${ipo['GMP'] !== null ? ipo['GMP'] : 'N/A'}</td>
                 `;
                 break;
 
