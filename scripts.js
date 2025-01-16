@@ -88,7 +88,7 @@ function updateTable(section, data) {
             case 'sme':
                 rowContent = `
                     <td>${ipo['Name']}</td>
-                    <td>${ipo['Status'].toUpperCase()}</td>                    
+                    <td>${ipo['Status'].charAt(0).toUpperCase() + ipo['Status'].slice(1).toLowerCase()}</td>                   
                     <td>${ipo['GMP'] !== null ? ipo['GMP'] : '_'}</td>
                     <td>${ipo['Min_price'] !== null ? ipo['Min_price'] : '_'}</td>
                     <td>${ipo['Max_price'] !== null ? ipo['Max_price'] : '_'}</td>
@@ -97,7 +97,7 @@ function updateTable(section, data) {
                     <td>${ipo['Listing_date'] !== null ? ipo['Listing_date'] : '_'}</td>
                     <td>${ipo['Lot_size'] !== null ? ipo['Lot_size'] : '_'}</td>
                      <td>${ipo['Additional_text'] !== null ? ipo['Additional_text'] : '_'}</td>
-                     <td>${ipo['Is_SME'] == true ? 'SME' : 'MainBoard'}</td>
+                     <td>${ipo['Is_SME'] == true ? 'SME' : 'Main Board'}</td>
                 `;
                 break;
 
