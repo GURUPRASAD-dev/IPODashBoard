@@ -88,7 +88,7 @@ function updateTable(section, data) {
             case 'sme':
                 rowContent = `
                     <td>${ipo['Name']}</td>
-                    <td>${ipo['Status']}</td>                    
+                    <td>${ipo['Status'].toUpperCase()}</td>                    
                     <td>${ipo['GMP'] !== null ? ipo['GMP'] : '_'}</td>
                     <td>${ipo['Min_price'] !== null ? ipo['Min_price'] : '_'}</td>
                     <td>${ipo['Max_price'] !== null ? ipo['Max_price'] : '_'}</td>
