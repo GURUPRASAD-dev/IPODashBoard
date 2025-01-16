@@ -105,11 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
             identifier,
             lastUpdateTime,
             percentageChange,
-            percentageChange30Days,
-            percentageChange365Days,
+            shortTermTrend,
+            longTermTrend,
             open,
             previousClose,
-            isBroadcasted
+            isBroadcasted,
+            description,
+            rating,
         } = stock;
 
         if (stockMap.has(companyname)) {
@@ -126,7 +128,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Change:</strong> <span class="highlight-change" style="color: ${parseFloat(change) >= 0 ? 'green' : 'red'};">${change} (${percentageChange}%)</span></p>
             <p><strong>Day High:</strong> ₹<span class="highlight-high">${dayHigh}</span> | <strong>Day Low:</strong> ₹<span class="highlight-low">${dayLow}</span></p>
             <p><strong>Open:</strong> ₹${open} | <strong>Previous Close:</strong> ₹${previousClose}</p>
-            <p><strong>30 Days %:</strong> <span class="highlight-30days">${percentageChange30Days}%</span> | <strong>365 Days %:</strong> <span class="highlight-365days">${percentageChange365Days}%</span></p>
+            <p><strong>Short Term Trend:</strong> <span class="highlight-30days">${shortTermTrend}%</span> | <strong>Long Term Trend:</strong> <span class="highlight-365days">${longTermTrend}%</span></p>
+            <p><strong>Description :</strong> ₹${description}</p>
+            <p><strong>Rating :</strong> ₹${rating}</p>
             <p><em>Last Updated:</em> ${new Date(lastUpdateTime).toLocaleString()}</p>
             <p class="broadcasted">${isBroadcasted ? '<i class="fas fa-broadcast-tower"></i> Broadcasted' : ''}</p>
         `;
